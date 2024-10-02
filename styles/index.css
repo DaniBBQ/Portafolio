@@ -1,0 +1,242 @@
+:root{
+    --main-color: #252828;
+    --fount-color: #0074F0;
+    --hover-fount-color: #003975;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--main-color); /* Color de fondo del header */
+    padding: 30px 0; /* Espaciado interno */
+    position: sticky; /* El nav sigue presente durante el recorrido */
+    top: 0px;
+}
+
+/* Barra de navegacion */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra elementos */
+}
+
+/* Lista del nav */
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    gap: 4vw;
+}
+
+.nav-list li {
+    margin: 0 15px; /* Espaciado entre los enlaces del nav */
+}
+
+/* Estetica de los elementos con enlances del nav */
+
+.nav-list a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    font-family: Subtitulo;
+}
+
+/* Titulo central del nav */
+
+.title {
+    color: white; /* Color del título */
+    font-family: Titulo;
+    font-size: 10vh;
+    margin: 0 30px; /* Espacio alrededor del título */
+}
+
+/* Bienvenida */
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Espaciado interno */
+    background-color: var(--main-color); /* Color de fondo del banner */
+}
+
+/* Foto de Perfil */
+
+.imagen_presentacion{
+    width: 20%; /* Ocupa el 20% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+/* Texto de Bienvenida */
+
+.texto_presentacion{
+    color: white; /* Color del texto */
+    font-size: 4vw; /* Tamaño del texto */
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    font-family: Parrafo;
+}
+
+/* Contenido Principal */
+
+main {
+    background-color: #252828;
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+    font-family: Parrafo; /* Fuente */
+}
+/* Secciones */
+
+section {
+    background-color: #303030;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 40px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Subtitulos de secciones */
+h2 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Parrafos de texto */
+p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+/* Subtitulos de los proyectos */
+h3 {
+    font-size: 2vw; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Link repo de la landing page */
+.link_landing{
+    color: var(--fount-color);
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    text-decoration: none;
+}
+/* Link repo de juego */
+.link_juego{
+    color: var(--fount-color);
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    text-decoration: none;
+}
+/* Link repo tarjeta de inv */
+.link_tarjeta{
+    color: var(--fount-color);
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    text-decoration: none;
+}
+/* Lista de mis conocimientos */
+.habilidades_lista{
+    display: flex;
+    font-size: 2vw;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+/* Correo Electronico */
+.correo{
+    color: var(--fount-color);
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Numero de telefono */
+.telefono{
+    color: var(--fount-color);
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: #252828;
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+    font-family: Titulo; /* Fuente */
+    justify-content: center;
+    font-size: 10%;
+}
+
+/* Tipografías */
+@font-face {
+    font-family: Titulo;
+    src: url("/assets/MadangLovers-Regular.ttf")
+}
+
+@font-face {
+    font-family: Subtitulo;
+    src: url("/assets/tarotheque\ v1.ttf");
+}
+
+@font-face {
+    font-family: Parrafo;
+    src: url("/assets/coolvetica\ condensed\ rg.otf");
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    section {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .habilidades_lista{
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 30px;
+    }
+
+    section {
+        font-size: 0.85em;
+    }
+    .habilidades_lista{
+        gap: 20px;
+    }
+
+    .main {
+        padding: 5px;
+    }
+}
